@@ -628,7 +628,12 @@ async def lifespan(app: FastAPI):
         yield
     # context managers are cleaned up by AsyncExitStack on exit
 
-app = FastAPI(lifespan=lifespan)
+app = FastAPI(
+    title="CortexMesh AI Platform",
+    description="Autonomous Multi-Agent Orchestration & Knowledge-Graph RAG Platform",
+    version="1.0.0",
+    lifespan=lifespan,
+)
 
 
 @app.middleware("http")

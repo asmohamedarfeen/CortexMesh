@@ -22,8 +22,8 @@ from schema import ChatMessage, model_dump_compat, model_validate_compat
 # The app heavily uses AgentClient to interact with the agent's FastAPI endpoints.
 
 
-APP_TITLE = "Research Assistant"
-APP_ICON = "🔎"
+APP_TITLE = "CortexMesh | Multi-Agent AI Platform"
+APP_ICON = "⚡"
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 load_dotenv(os.path.join(ROOT_DIR, ".env"))
 USER_AUTH_ENABLED = os.getenv("ENABLE_USER_AUTH", "true").strip().lower() not in {

@@ -1,4 +1,4 @@
-# ⚡ AgentForge
+# ⚡ CortexMesh
 
 <p align="center">
   <img src="https://img.shields.io/badge/AGENTIC-AI-7C3AED?style=for-the-badge&labelColor=0B0F19" />
@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  AgentForge is an extensible multi-agent AI platform built around
+  CortexMesh is an extensible multi-agent AI platform built around
   <br/>
   LangGraph, hybrid RAG, knowledge graphs, MCP tools,
   <br/>
@@ -27,7 +27,7 @@
 </p>
 
 <p align="center">
-  <a href="#-why-agentforge">Why AgentForge</a> •
+  <a href="#-why-cortexmesh">Why CortexMesh</a> •
   <a href="#-architecture">Architecture</a> •
   <a href="#-capabilities">Capabilities</a> •
   <a href="#-quick-start">Quick Start</a> •
@@ -46,7 +46,7 @@ Most AI applications still look like this:
 └──────────┘      └─────────┘      └──────────┘
 ```
 
-AgentForge is built around a different execution model:
+CortexMesh is built around a different execution model:
 
 ```text
                          ┌──────────────┐
@@ -92,9 +92,9 @@ The current implementation already includes a 12-agent LangGraph workflow, routi
 
 ---
 
-# 🚀 Why AgentForge?
+# 🚀 Why CortexMesh?
 
-AgentForge is built for people who want to move from:
+CortexMesh is built for people who want to move from:
 
 > **"LLM wrapper"**
 
@@ -208,7 +208,7 @@ These capabilities are already represented in the repository's current implement
 
 # 🧩 12-Stage Intelligence Pipeline
 
-AgentForge currently orchestrates:
+CortexMesh currently orchestrates:
 
 ```text
 01  Safety
@@ -229,7 +229,7 @@ AgentForge currently orchestrates:
 
 A user does not need to know which AI mechanism is appropriate.
 
-AgentForge decides:
+CortexMesh decides:
 
 ```text
 "What kind of reasoning does this task require?"
@@ -247,7 +247,7 @@ AgentForge decides:
 
 # 🔍 Retrieval That Goes Beyond Vector Search
 
-AgentForge's local RAG pipeline combines multiple retrieval strategies:
+CortexMesh's local RAG pipeline combines multiple retrieval strategies:
 
 ```text
                    QUERY
@@ -278,7 +278,7 @@ Not every question is semantic.
 
 Some questions are about **relationships**.
 
-AgentForge provides a dedicated graph-oriented retrieval path:
+CortexMesh provides a dedicated graph-oriented retrieval path:
 
 ```text
 Documents
@@ -300,7 +300,7 @@ This is designed for relationship-style local queries and uses a separate graph-
 
 # 🔌 MCP — Tool Connectivity
 
-AgentForge supports MCP-backed tools through a dedicated bridge architecture.
+CortexMesh supports MCP-backed tools through a dedicated bridge architecture.
 
 ```text
              Agent
@@ -340,11 +340,11 @@ For supported tasks:
  CONTINUE     STOP
 ```
 
-## AgentForge persists HITL decisions with user/thread context for auditing.
+## CortexMesh persists HITL decisions with user/thread context for auditing.
 
 # 💾 Persistent Intelligence
 
-AgentForge isn't designed around a disposable request.
+CortexMesh isn't designed around a disposable request.
 
 ### LangGraph Checkpointing
 
@@ -405,7 +405,7 @@ The project also exposes authenticated registration/login and HITL audit endpoin
 
 # 📊 Built-In Observability
 
-AgentForge ships with:
+CortexMesh ships with:
 
 ```text
 FastAPI
@@ -508,7 +508,7 @@ You can monitor:
 # 📁 Repository Structure
 
 ```text
-AgentForge/
+CortexMesh/
 │
 ├── agent/                 # AI orchestration + agents + tools
 ├── client/                # Python client
@@ -558,8 +558,8 @@ These workflows are already documented in the repository.
 ### Clone
 
 ```bash
-git clone https://github.com/Roshanrameshhub/AgentForge.git
-cd AgentForge
+git clone https://github.com/asmohamedarfeen/new11.git
+cd CortexMesh
 ```
 
 ### Install
@@ -590,7 +590,7 @@ The documented local stack includes FastAPI, Streamlit, Prometheus, and Grafana.
 
 ---
 
-# 📚 Feed AgentForge Your Own Knowledge
+# 📚 Feed CortexMesh Your Own Knowledge
 
 Place PDFs inside:
 
@@ -628,7 +628,7 @@ python scripts/ingestion/ingest_graph_rag_pdfs.py \
 
 # 🌌 Roadmap
 
-AgentForge is evolving toward a broader **autonomous AI workbench**.
+CortexMesh is evolving toward a broader **autonomous AI workbench**.
 
 ### ✅ Foundation
 
@@ -681,9 +681,9 @@ Known limitations include:
 
 ---
 
-# 🎯 What AgentForge Is For
+# 🎯 What CortexMesh Is For
 
-AgentForge can serve as a foundation for building:
+CortexMesh can serve as a foundation for building:
 
 ```text
 Research Agents
@@ -719,17 +719,17 @@ Contributions are welcome across:
 
 # ⚖️ License
 
-AgentForge is distributed under the **MIT License**.
+CortexMesh is distributed under the **MIT License**.
 
 See [`LICENSE`](LICENSE) for the full terms.
 
-This project is derived from an MIT-licensed open-source foundation and has been renamed and substantially extended as **AgentForge**. Original license and copyright notices are retained.
+Copyright (c) 2026 AS Mohamed Arfeen. Distributed under the **MIT License**.
 
 ---
 
 <p align="center">
 
-## ⚡ AgentForge
+## ⚡ CortexMesh
 
 ### **From prompts → to reasoning → to autonomous workflows.**
 
