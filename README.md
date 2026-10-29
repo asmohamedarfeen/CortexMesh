@@ -420,7 +420,7 @@ CortexMesh/
 ### 1. Clone & Configure
 
 ```bash
-git clone https://github.com/asmohamedarfeen/new11.git CortexMesh
+git clone https://github.com/asmohamedarfeen/CortexMesh.git
 cd CortexMesh
 ```
 
