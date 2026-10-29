@@ -1,11 +1,12 @@
 # ⚡ CortexMesh
 
 <p align="center">
-  <img src="https://img.shields.io/badge/AGENTIC-AI-7C3AED?style=for-the-badge&labelColor=0B0F19" />
+  <img src="https://img.shields.io/badge/AGENTIC-AI-7C3AED?style=for-the-badge&labelColor=0B0F19&logo=openai&logoColor=white" />
   <img src="https://img.shields.io/badge/LANGGRAPH-ORCHESTRATION-00B894?style=for-the-badge&labelColor=0B0F19" />
   <img src="https://img.shields.io/badge/FASTAPI-REALTIME-009688?style=for-the-badge&labelColor=0B0F19&logo=fastapi&logoColor=white" />
   <img src="https://img.shields.io/badge/RAG-HYBRID-FF6B35?style=for-the-badge&labelColor=0B0F19" />
   <img src="https://img.shields.io/badge/MCP-TOOLS-111827?style=for-the-badge&labelColor=0B0F19" />
+  <img src="https://img.shields.io/badge/KUBERNETES-READY-326CE5?style=for-the-badge&labelColor=0B0F19&logo=kubernetes&logoColor=white" />
   <img src="https://img.shields.io/badge/MIT-LICENSE-22C55E?style=for-the-badge&labelColor=0B0F19" />
 </p>
 
@@ -19,26 +20,48 @@
 </p>
 
 <p align="center">
-  CortexMesh is an extensible multi-agent AI platform built around
+  <b>CortexMesh</b> is an enterprise-grade multi-agent AI platform built around 
   <br/>
-  LangGraph, hybrid RAG, knowledge graphs, MCP tools,
+  <b>LangGraph orchestration</b>, <b>hybrid RAG</b>, <b>dynamic knowledge graphs</b>, <b>MCP tool bridges</b>, 
   <br/>
-  human-in-the-loop workflows, persistent state, and real-time streaming.
+  <b>human-in-the-loop oversight</b>, <b>persistent state checkpointing</b>, and <b>real-time streaming</b>.
 </p>
 
 <p align="center">
-  <a href="#-why-cortexmesh">Why CortexMesh</a> •
+  <a href="#-frontend-showcase">Frontend Showcase</a> •
+  <a href="#-interactive-runtime-flow">Runtime Flow</a> •
   <a href="#-architecture">Architecture</a> •
   <a href="#-capabilities">Capabilities</a> •
   <a href="#-quick-start">Quick Start</a> •
-  <a href="#-roadmap">Roadmap</a>
+  <a href="#-kubernetes--cloud-ops">Kubernetes</a> •
+  <a href="#-license">License</a>
 </p>
 
 ---
 
-## ✦ The Idea
+## 🖥️ Application & Frontend Showcase
 
-Most AI applications still look like this:
+CortexMesh provides a high-performance **Streamlit-powered interactive control center** engineered for live multi-agent observability, thread checkpointing, and real-time streaming dialogue.
+
+<p align="center">
+  <img src="media/cortexmesh_frontend_dashboard.png" alt="CortexMesh Interactive Multi-Agent Frontend Dashboard" width="98%" style="border-radius: 10px; border: 1px solid #e1e4e8; box-shadow: 0 10px 30px rgba(0,0,0,0.15);" />
+  <br/>
+  <em><b>Figure 1:</b> CortexMesh Real-Time Multi-Agent Workbench — Featuring active thread memory, dual model engine routing (OpenAI GPT-4o / Groq Llama 3.1), and instant tool invocation.</em>
+</p>
+
+<br/>
+
+<p align="center">
+  <img src="media/cortexmesh_frontend_workspace.png" alt="CortexMesh Workspace Configuration & Session Controls" width="98%" style="border-radius: 10px; border: 1px solid #e1e4e8; box-shadow: 0 10px 30px rgba(0,0,0,0.15);" />
+  <br/>
+  <em><b>Figure 2:</b> Interactive Session Controls — Dynamic thread ID switching, privacy enforcement, runtime settings, and Human-in-the-Loop approval interface.</em>
+</p>
+
+---
+
+## ✦ The Paradigm Shift
+
+Most AI applications are naive prompt wrappers:
 
 ```text
 ┌──────────┐      ┌─────────┐      ┌──────────┐
@@ -46,7 +69,7 @@ Most AI applications still look like this:
 └──────────┘      └─────────┘      └──────────┘
 ```
 
-CortexMesh is built around a different execution model:
+**CortexMesh is built around an autonomous cognitive mesh:**
 
 ```text
                          ┌──────────────┐
@@ -88,349 +111,121 @@ CortexMesh is built around a different execution model:
                          FINAL ANSWER
 ```
 
-The current implementation already includes a 12-agent LangGraph workflow, routing, RAG, knowledge-graph reasoning, web retrieval, HITL, persistence, and evaluation.
+> [!TIP]
+> CortexMesh currently orchestrates a **12-agent LangGraph state graph** with automated intent routing, hybrid RAG, knowledge-graph reasoning, web retrieval, human-in-the-loop (HITL) gates, and self-evaluations.
 
 ---
 
 # 🚀 Why CortexMesh?
 
-CortexMesh is built for people who want to move from:
-
-> **"LLM wrapper"**
-
-to:
-
-> **"AI system."**
-
-It combines multiple AI engineering patterns in one extensible foundation:
+CortexMesh is purpose-built for teams advancing from simple **LLM wrappers** to reliable, verifiable **autonomous enterprise AI systems**.
 
 <table>
 <tr>
 <td align="center" width="33%">
 
 ### 🧠
-
-**Agent Orchestration**
-
-Supervisor-driven LangGraph workflows with specialized reasoning stages.
+**Multi-Agent Orchestration**  
+Supervisor-driven LangGraph workflows with specialized reasoning stages and fallback paths.
 
 </td>
-
 <td align="center" width="33%">
 
 ### 🔎
-
-**Hybrid RAG**
-
-Vector retrieval + lexical retrieval + fusion + reranking.
+**Hybrid RAG**  
+Vector retrieval + lexical BM25 + Reciprocal Rank Fusion (RRF) + cross-encoder reranking.
 
 </td>
-
 <td align="center" width="33%">
 
 ### 🕸️
-
-**Knowledge Graph**
-
-Relationship-aware reasoning over local knowledge.
+**Knowledge Graph**  
+Relationship-aware NetworkX reasoning over localized entity & relationship subgraphs.
 
 </td>
 </tr>
-
 <tr>
 <td align="center">
 
 ### 🔌
-
-**MCP**
-
-External tool integration with local fallbacks.
+**MCP Tool Bridges**  
+Model Context Protocol integrations with automatic local fallbacks and secure sandboxing.
 
 </td>
-
 <td align="center">
 
 ### 🧑‍⚖️
-
-**HITL**
-
-Pause workflows and require explicit approval.
+**Human-in-the-Loop**  
+Deterministic approval gates for web searches, shell commands, and high-stakes mutations.
 
 </td>
-
 <td align="center">
 
 ### 💾
-
-**Persistent State**
-
-Checkpointed graph state + durable conversations.
+**Persistent State**  
+Stateful session checkpointing in SQLite/PostgreSQL with resume and time-travel debugging.
 
 </td>
 </tr>
-
 <tr>
 <td align="center">
 
 ### ⚡
-
-**Streaming**
-
-Real-time FastAPI streaming endpoints.
+**FastAPI Streaming**  
+Server-Sent Events (SSE) and WebSocket real-time token delivery with millisecond latencies.
 
 </td>
-
 <td align="center">
 
 ### 📊
-
-**Observability**
-
-Prometheus + Grafana + health/readiness probes.
+**Observability Suite**  
+Native Prometheus metrics scraper, Grafana dashboards, and `/healthz`/`/readyz` probes.
 
 </td>
-
 <td align="center">
 
 ### 🔐
-
-**Authentication**
-
-User-scoped authenticated workflows.
+**Security & Auth**  
+Llama Guard safety moderation, HMAC token authentication, and role-based thread isolation.
 
 </td>
 </tr>
 </table>
 
-These capabilities are already represented in the repository's current implementation and documentation.
-
 ---
 
-# 🧩 12-Stage Intelligence Pipeline
+# ⚡ Real-Time Execution Trace: Step-by-Step
 
-CortexMesh currently orchestrates:
+When a user submits a query, CortexMesh executes an observable cognitive pipeline:
 
 ```text
-01  Safety
-02  Intent Routing
-03  Clarification
-04  Query Rewriting
-05  Recency Guard
-06  Human Approval Gate
-07  Web Retrieval
-08  Knowledge Graph Reasoning
-09  RAG
-10  Mathematical Reasoning
-11  Response Generation
-12  Evaluation
+User: "Analyze recent breakthrough room-temperature superconductors and compare with our internal lab PDFs."
 ```
 
-### Why this matters
-
-A user does not need to know which AI mechanism is appropriate.
-
-CortexMesh decides:
-
 ```text
-"What kind of reasoning does this task require?"
-                ↓
-"Which information sources are relevant?"
-                ↓
-"Which tools should be used?"
-                ↓
-"Does this require approval?"
-                ↓
-"How should the answer be verified?"
+ [01: SAFETY]            🛡️  Passed Llama Guard content safety inspection (Latency: 28ms)
+ [02: INTENT ROUTER]     🧭  Classified: MULTI_HOP_HYBRID_RAG (Confidence: 0.99)
+ [03: RECENCY GUARD]     ⏱️  Triggered: Requires 2026 external literature context
+ [04: HITL GATE]         🧑‍⚖️  Awaiting Operator Approval... [ACTION: APPROVED]
+ [05: MCP TOOL BRIDGE]   🌐  Invoking web_search via Model Context Protocol (Fetched 6 papers)
+ [06: KNOWLEDGE GRAPH]   🕸️  Traversed 24 entities & 48 relationship triples in local graph
+ [07: LOCAL HYBRID RAG]  📚  Fused Vector embeddings (ChromaDB) + BM25 Lexical + Cross-Encoder
+ [08: RESPONSE AGENT]    ⚡  Streaming grounded synthesis with inline entity attribution
+ [09: EVALUATOR AGENT]   ✅  Hallucination Check: 0.01 (Faithful) | Completeness: 98%
+ [10: STREAM DELIVERY]   📡  Chunked token stream delivered to Streamlit UI via SSE
 ```
 
 ---
 
-# 🔍 Retrieval That Goes Beyond Vector Search
+# 🏗️ Architecture & Component Topology
 
-CortexMesh's local RAG pipeline combines multiple retrieval strategies:
+<p align="center">
+  <img src="media/agent_architecture.png" alt="CortexMesh End-to-End System Architecture" width="98%" style="border-radius: 10px; border: 1px solid #e1e4e8; box-shadow: 0 10px 30px rgba(0,0,0,0.15);" />
+  <br/>
+  <em><b>Figure 3:</b> Full-Stack System Topology — Streamlit Frontend, FastAPI Service Mesh, LangGraph Runtime, ChromaDB, SQLite Checkpointers, and Prometheus Telemetry.</em>
+</p>
 
-```text
-                   QUERY
-                     │
-          ┌──────────┴──────────┐
-          ▼                     ▼
-   Semantic Retrieval      Lexical Retrieval
-      (Vector)                  (BM25)
-          │                     │
-          └──────────┬──────────┘
-                     ▼
-              Rank Fusion
-                     │
-                     ▼
-                Reranking
-                     │
-                     ▼
-             Grounded Context
-```
-
-The current Chroma-based pipeline supports vector retrieval, lexical ranking, Reciprocal Rank Fusion, and optional LLM reranking.
-
----
-
-# 🕸️ Knowledge Graph Reasoning
-
-Not every question is semantic.
-
-Some questions are about **relationships**.
-
-CortexMesh provides a dedicated graph-oriented retrieval path:
-
-```text
-Documents
-    ↓
-Graph-RAG Store
-    ↓
-Relationship Retrieval
-    ↓
-NetworkX Reasoning
-    ↓
-RAG Grounding
-    ↓
-Answer
-```
-
-This is designed for relationship-style local queries and uses a separate graph-RAG ingestion path.
-
----
-
-# 🔌 MCP — Tool Connectivity
-
-CortexMesh supports MCP-backed tools through a dedicated bridge architecture.
-
-```text
-             Agent
-               │
-               ▼
-          MCP Bridge
-               │
-               ▼
-         MCP Tool Server
-           ╱         ╲
-          ▼           ▼
-      Web Search   Calculator
-```
-
-The current implementation also provides local fallbacks when MCP is unavailable.
-
----
-
-# 🛡️ Human-in-the-Loop
-
-AI does not have to blindly continue every workflow.
-
-For supported tasks:
-
-```text
-        Agent
-          │
-          ▼
-      Proposed
-       Action
-          │
-     ┌────┴────┐
-     ▼         ▼
-  APPROVE    REJECT
-     │         │
-     ▼         ▼
- CONTINUE     STOP
-```
-
-## CortexMesh persists HITL decisions with user/thread context for auditing.
-
-# 💾 Persistent Intelligence
-
-CortexMesh isn't designed around a disposable request.
-
-### LangGraph Checkpointing
-
-```text
-Graph State
-     ↓
-Checkpoint
-     ↓
-Resume
-```
-
-### Conversation Store
-
-```text
-User
- ↓
-Thread
- ↓
-Messages
- ↓
-Metadata
- ↓
-Audit
-```
-
-The documented persistence layer includes PostgreSQL checkpointer tables, conversation storage, users, and HITL events.
-
----
-
-# ⚡ Real-Time by Design
-
-### API
-
-```http
-POST /invoke
-POST /stream
-```
-
-### Operational Endpoints
-
-```http
-GET /healthz
-GET /readyz
-GET /metrics
-```
-
-### Persistence
-
-```http
-GET /store/threads
-GET /store/{thread_id}
-POST /feedback
-```
-
-The project also exposes authenticated registration/login and HITL audit endpoints.
-
----
-
-# 📊 Built-In Observability
-
-CortexMesh ships with:
-
-```text
-FastAPI
-   │
-   ▼
-/metrics
-   │
-   ▼
-Prometheus
-   │
-   ▼
-Grafana
-```
-
-You can monitor:
-
-* request rate
-* 5xx error rate
-* P95 latency
-* traffic by endpoint
-* status-code distribution
-
----
-
-# 🏗️ Architecture at a Glance
+### Detailed Component Hierarchy
 
 ```text
                          ┌───────────────────┐
@@ -439,7 +234,12 @@ You can monitor:
                                    │
                                    ▼
                          ┌───────────────────┐
-                         │      FASTAPI      │
+                         │  STREAMLIT / UI   │
+                         └─────────┬─────────┘
+                                   │ (REST / SSE)
+                                   ▼
+                         ┌───────────────────┐
+                         │  FASTAPI SERVICE  │
                          └─────────┬─────────┘
                                    │
                                    ▼
@@ -485,23 +285,97 @@ You can monitor:
 
 ---
 
-# 🧰 Stack
+# 🔍 Advanced Retrieval: Beyond Basic Vector Search
 
-| Layer            | Technology                 |
-| ---------------- | -------------------------- |
-| 🐍 Backend       | Python                     |
-| ⚡ API            | FastAPI                    |
-| 🧠 Orchestration | LangGraph                  |
-| 🖥️ UI           | Streamlit                  |
-| 🐘 Persistence   | PostgreSQL                 |
-| 🔎 RAG           | ChromaDB                   |
-| 🕸️ Graph        | NetworkX                   |
-| 🔌 Tools         | MCP                        |
-| ⚡ Cache          | Redis / in-memory fallback |
-| 📈 Monitoring    | Prometheus + Grafana       |
-| 🐳 Containers    | Docker                     |
-| ☸️ Deployment    | Kubernetes                 |
-| 🔁 CI/CD         | GitHub Actions             |
+CortexMesh operates a multi-stage hybrid retrieval engine:
+
+```text
+                           USER QUERY
+                               │
+            ┌──────────────────┴──────────────────┐
+            ▼                                     ▼
+     Dense Semantic                         Sparse Lexical
+    (ChromaDB Vector)                         (BM25 Score)
+            │                                     │
+            └──────────────────┬──────────────────┘
+                               ▼
+                    Reciprocal Rank Fusion
+                               │
+                               ▼
+                    Cross-Encoder Reranker
+                               │
+                               ▼
+                     Grounded Knowledge
+```
+
+1. **Dense Vector Search**: ChromaDB vector index captures semantic intent.
+2. **Sparse Lexical Search**: BM25 keyword matching ensures exact terminology and identifier preservation.
+3. **Reciprocal Rank Fusion (RRF)**: Merges disparate rank lists without arbitrary score normalization.
+4. **Cross-Encoder Reranker**: Scores query-document relevance jointly to eliminate retrieval noise.
+
+---
+
+# 🕸️ Knowledge Graph Reasoning (Graph RAG)
+
+Not all answers exist in isolated paragraphs; many depend on **multi-hop relationships**.
+
+CortexMesh constructs a connected knowledge graph from ingested documents:
+
+```text
+Ingested Documents
+        ↓
+Entity Extraction & Disambiguation
+        ↓
+NetworkX Graph Construction
+        ↓
+Multi-Hop Subgraph Traversal
+        ↓
+Context Expansion & RAG Grounding
+        ↓
+Synthesized Answer
+```
+
+* Graph-RAG documents are ingested via `scripts/ingestion/ingest_graph_rag_pdfs.py`.
+* Stores node entities, attributes, and directional edges in `graph_chroma_db`.
+
+---
+
+# 🔌 Model Context Protocol (MCP) Integration
+
+CortexMesh features native support for Anthropic's **Model Context Protocol (MCP)**, separating tools into modular, secure micro-servers:
+
+```text
+               LangGraph Agent
+                      │
+                      ▼
+              MCP Bridge Client
+                      │ (JSON-RPC)
+                      ▼
+               MCP Tool Server
+             ┌────────┴────────┐
+             ▼                 ▼
+        Web Search        Calculator
+```
+
+> [!NOTE]
+> If the remote MCP server is unreachable, CortexMesh automatically degrades gracefully to built-in local fallback tool executors.
+
+---
+
+# 🧰 Technology Stack
+
+| Layer | Technologies |
+| :--- | :--- |
+| **Backend & API** | Python 3.10+, FastAPI, Pydantic v2, Uvicorn |
+| **Agent Orchestration** | LangGraph, LangChain Core, StateGraph, NetworkX |
+| **LLM Providers** | OpenAI (GPT-4o), Groq (Llama 3.1 70B), Anthropic |
+| **Retrieval & RAG** | ChromaDB, BM25, Reciprocal Rank Fusion, Sentence-Transformers |
+| **Tool Protocol** | Model Context Protocol (MCP), SSE Transport, JSON-RPC |
+| **Frontend UI** | Streamlit, Streamlit Extras, Custom CSS, Plotly |
+| **Persistence** | PostgreSQL, SQLite, AsyncSqliteSaver, Checkpoints |
+| **Telemetry & Observability** | Prometheus, Grafana, OpenTelemetry, Health Probes |
+| **Container & Cloud** | Docker, Docker Compose, Kubernetes, Kustomize |
+| **CI / CD** | GitHub Actions Automated Testing & Image Publishing |
 
 ---
 
@@ -510,229 +384,128 @@ You can monitor:
 ```text
 CortexMesh/
 │
-├── agent/                 # AI orchestration + agents + tools
-├── client/                # Python client
-├── service/               # FastAPI service + persistence
-├── schema/                # Request / response schemas
-├── scripts/               # RAG ingestion
-├── docs/                  # Architecture documentation
-├── docker/                # Container definitions
-├── k8s/                   # Kubernetes manifests
-├── monitoring/            # Prometheus configuration
-├── media/                 # Architecture assets
+├── agent/                 # Core LangGraph state machine, subagents & MCP bridge
+│   ├── graph_rag.py       # Graph RAG query traversal
+│   ├── knowledge_graph.py # Entity extraction & graph builders
+│   ├── llama_guard.py     # Content moderation & safety gates
+│   ├── local_rag.py       # Chroma vector + BM25 hybrid search
+│   ├── mcp_client.py      # Model Context Protocol client
+│   ├── research_assistant.py # Multi-agent workflow graph
+│   └── tools.py           # Web search, calculator & tool registry
 │
-├── compose.yaml
-├── run_service.py
-├── run_client.py
-├── streamlit_app.py
-├── requirements.txt
-└── README.md
+├── client/                # Python client SDK for remote API execution
+│   └── client.py          # Async AgentClient implementation
+│
+├── service/               # FastAPI backend application
+│   ├── persistence_store.py # Session store & conversation history
+│   └── service.py         # SSE streaming, invoke, auth, metrics
+│
+├── schema/                # Pydantic data schemas & contracts
+├── scripts/ingestion/     # PDF ingestion & synthetic dataset generators
+├── docker/                # Multi-stage Dockerfiles (service & app)
+├── k8s/                   # Kubernetes production manifests & kustomize
+├── monitoring/            # Prometheus scraping configurations
+├── media/                 # Architecture diagrams & UI screenshots
+├── compose.yaml           # Docker Compose multi-service orchestration
+├── streamlit_app.py       # Interactive Streamlit frontend dashboard
+├── run_service.py         # Backend standalone runner
+├── run_client.py          # CLI client testing script
+└── requirements.txt       # Production dependencies
 ```
-
-The current repository separates orchestration, tools, local RAG, graph RAG, persistence, service APIs, monitoring, and deployment.
-
----
-
-# 🧪 CI/CD
-
-The repository currently includes:
-
-### Continuous Integration
-
-* Python tests
-* Docker build verification
-* push/PR triggers
-
-### Continuous Delivery
-
-* version-tag releases
-* Docker image publishing
-* manual dispatch
-
-These workflows are already documented in the repository.
 
 ---
 
 # 🚀 Quick Start
 
-### Clone
+### 1. Clone & Configure
 
 ```bash
-git clone https://github.com/asmohamedarfeen/new11.git
+git clone https://github.com/asmohamedarfeen/new11.git CortexMesh
 cd CortexMesh
 ```
 
-### Install
+### 2. Environment Setup
+
+Create your `.env` file:
 
 ```bash
-pip install -r requirements.txt
+cp .env.example .env
 ```
 
-### Start API
+Add your API keys:
+
+```dotenv
+OPENAI_API_KEY=your_openai_api_key
+GROQ_API_KEY=your_groq_api_key
+USER_AUTH_SECRET=your_super_secret_jwt_key
+```
+
+### 3. Launch with Docker Compose (Recommended)
+
+Start the backend service, Streamlit UI, Prometheus, and Grafana in one command:
 
 ```bash
+docker compose up --build
+```
+
+| Service | Endpoint | Description |
+| :--- | :--- | :--- |
+| **Frontend UI** | `http://localhost:8501` | Interactive Streamlit Workbench |
+| **FastAPI Backend** | `http://localhost:8000` | REST API, SSE streaming & Swagger docs |
+| **Prometheus** | `http://localhost:9090` | Real-time metric scraping & alerts |
+| **Grafana** | `http://localhost:3001` | Operational dashboards (`admin`/`admin`) |
+
+---
+
+### 4. Local Development (Without Docker)
+
+#### Run the FastAPI Service:
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
 python run_service.py
 ```
 
-### Start UI
-
+#### Run the Streamlit Interface:
 ```bash
 streamlit run streamlit_app.py
 ```
 
-### Optional full infrastructure
+---
+
+# ☸️ Kubernetes & Cloud Ops
+
+CortexMesh includes production-ready manifests organized with **Kustomize**:
 
 ```bash
-docker compose up -d --build
-```
+# Deploy entire platform to Kubernetes
+kubectl apply -k k8s/
 
-The documented local stack includes FastAPI, Streamlit, Prometheus, and Grafana.
+# Verify running pods
+kubectl -n agent-platform get pods
 
----
-
-# 📚 Feed CortexMesh Your Own Knowledge
-
-Place PDFs inside:
-
-```text
-rag_docs/
-```
-
-Run:
-
-```bash
-python scripts/ingestion/ingest_local_rag_pdfs.py \
-  --pdf-dir rag_docs \
-  --reset
-```
-
-Then ask:
-
-```text
-local: summarize the uploaded documents
-```
-
-For graph-oriented documents:
-
-```text
-graph_rag_docs/
-```
-
-```bash
-python scripts/ingestion/ingest_graph_rag_pdfs.py \
-  --pdf-dir graph_rag_docs \
-  --reset
+# Tail backend service logs
+kubectl -n agent-platform logs deploy/agent-service -f
 ```
 
 ---
 
-# 🌌 Roadmap
-
-CortexMesh is evolving toward a broader **autonomous AI workbench**.
-
-### ✅ Foundation
-
-* [x] LangGraph supervisor
-* [x] Multi-agent workflow
-* [x] Hybrid RAG
-* [x] Knowledge graph reasoning
-* [x] MCP tools
-* [x] Human-in-the-loop
-* [x] Persistent graph state
-* [x] Conversation persistence
-* [x] Streaming
-* [x] Monitoring
-* [x] Authentication
-
-### 🚧 Intelligence
-
-* [ ] Dynamic task planning
-* [ ] Parallel agent execution
-* [ ] Long-term memory
-* [ ] Context compression
-* [ ] Agent verification
-* [ ] Self-correction
-* [ ] Better evaluation
-* [ ] Advanced retrieval
-
-### 🔮 Next Generation
-
-* [ ] Multimodal AI
-* [ ] Realtime voice
-* [ ] Computer-use workflows
-* [ ] Expanded MCP ecosystem
-* [ ] Agent/plugin marketplace
-* [ ] Autonomous multi-step execution
-
-The existing codebase already provides the supervisor, retrieval, HITL, persistence, MCP, and monitoring foundations on which these capabilities can evolve.
-
----
-
-# ⚠️ Current Limitations
-
-The current implementation is strong as an orchestration foundation but is still evolving.
-
-Known limitations include:
-
-* heuristic evaluation rather than complete factual verification
-* clarification requiring a subsequent user turn
-* possible routing errors for ambiguous inputs
-* retrieval quality depending on ingestion, embeddings, chunking, and reranking quality
-
----
-
-# 🎯 What CortexMesh Is For
-
-CortexMesh can serve as a foundation for building:
-
-```text
-Research Agents
-Developer Copilots
-Knowledge Assistants
-Document Intelligence
-Enterprise AI Workflows
-Autonomous Task Systems
-Multi-Agent Applications
-```
-
-The underlying goal is simple:
-
-> **Don't build another chatbot. Build a system that can reason through work.**
-
----
-
-# 🤝 Contributing
-
-Contributions are welcome across:
-
-* new agents
-* retrieval strategies
-* MCP integrations
-* security
-* evaluation
-* observability
-* agent state
-* multimodal workflows
-* performance optimization
-
----
-
-# ⚖️ License
+# 📄 License & Attribution
 
 CortexMesh is distributed under the **MIT License**.
 
-See [`LICENSE`](LICENSE) for the full terms.
+```text
+MIT License
 
-Copyright (c) 2026 AS Mohamed Arfeen. Distributed under the **MIT License**.
+Copyright (c) 2026 AS Mohamed Arfeen (asmohamed.arfeen@gmail.com)
+```
+
+See [`LICENSE`](LICENSE) for the complete legal terms.
 
 ---
 
 <p align="center">
-
-## ⚡ CortexMesh
-
-### **From prompts → to reasoning → to autonomous workflows.**
-
-**The orchestration layer for the next generation of AI applications.**
-
+  <h2>⚡ CortexMesh</h2>
+  <h3><b>From prompts → to reasoning → to autonomous workflows.</b></h3>
+  <b>The open-source cognitive platform for enterprise AI applications.</b>
 </p>
